@@ -22,6 +22,11 @@
    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/ecyrbe/zodios-openapi/CI">
  </p>
 
+> [!NOTE]
+> This is a fork of [ecyrbe/zodios-openapi](https://github.com/ecyrbe/zodios-openapi), which is no longer maintained.
+> Its only goal is to get zodios working with **zod 4** while still using express. Don't expect active
+> maintenance beyond that.
+
 # What is it ?
 
 It's an openapi generator for zodios api description format.
@@ -40,7 +45,7 @@ It's an openapi generator for zodios api description format.
 # Install
 
 ```bash
-> npm install @zodios/openapi
+> npm install @christensena/zodios-openapi
 ```
 
 or
