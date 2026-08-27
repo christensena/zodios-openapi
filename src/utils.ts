@@ -1,20 +1,14 @@
 import { z } from "zod";
 
-export function isZodType(
-  t: z.ZodTypeAny,
-  type: z.ZodFirstPartyTypeKind
-): boolean {
-  if (t._def?.typeName === type) {
+// zod 4: refinements no longer wrap the schema, so only wrapper types
+// (optional, nullable, default, ...) need unwrapping via def.innerType.
+export function isZodType(t: z.ZodType, type: string): boolean {
+  const def: any = (t as any).def;
+  if (def?.type === type) {
     return true;
   }
-  if (
-    t._def?.typeName === z.ZodFirstPartyTypeKind.ZodEffects &&
-    (t as z.ZodEffects<any>)._def.effect.type === "refinement"
-  ) {
-    return isZodType((t as z.ZodEffects<any>).innerType(), type);
-  }
-  if (t._def?.innerType) {
-    return isZodType(t._def.innerType, type);
+  if (def?.innerType) {
+    return isZodType(def.innerType, type);
   }
   return false;
 }
