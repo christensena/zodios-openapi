@@ -1,4 +1,3 @@
-import { zodToJsonSchema } from "zod-to-json-schema";
 import type { OpenAPIV3 } from "openapi-types";
 import type {
   ZodiosEndpointDefinition,
@@ -14,8 +13,8 @@ function pathWithoutParams(path: string) {
   return path.indexOf("?") > -1
     ? path.split("?")[0]
     : path.indexOf("#") > -1
-    ? path.split("#")[0]
-    : path;
+      ? path.split("#")[0]
+      : path;
 }
 
 function tagsFromPath(path: string): string[] | undefined {
@@ -75,10 +74,13 @@ function findPathParam(endpoint: ZodiosEndpointDefinition, paramName: string) {
   );
 }
 
-function makeJsonSchema(schema: z.ZodTypeAny) {
-  return zodToJsonSchema(schema, {
-    target: "openApi3",
-    $refStrategy: "none",
+function makeJsonSchema(schema: z.ZodType) {
+  // io: "input" matches zod-to-json-schema, which described the input side
+  // of transforms; unrepresentable: "any" emits {} instead of throwing
+  return z.toJSONSchema(schema, {
+    target: "openapi-3.0",
+    io: "input",
+    unrepresentable: "any",
   }) as OpenAPIV3.SchemaObject;
 }
 
@@ -177,15 +179,13 @@ function makeOpenApi(options: {
           const required = !param.schema.isOptional();
           const schemaDesc = param.schema.description;
           const schema =
-            required ||
-            !isZodType(param.schema, z.ZodFirstPartyTypeKind.ZodOptional)
+            required || !isZodType(param.schema, "optional")
               ? param.schema
               : (param.schema as z.ZodOptional<z.ZodType>).unwrap();
 
           parameters.push({
             name:
-              param.type === "Query" &&
-              isZodType(param.schema, z.ZodFirstPartyTypeKind.ZodArray)
+              param.type === "Query" && isZodType(param.schema, "array")
                 ? `${param.name}[]`
                 : param.name,
             in: param.type.toLowerCase(),

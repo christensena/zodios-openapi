@@ -1,3 +1,6 @@
+peerDependencyRules:
+  allowedVersions:
+    "@zodios/core>zod": "4"
 allowBuilds:
   # telemetry postinstall (via swagger-ui-express); keep disabled
   "@scarf/scarf": false
@@ -5,3 +8,4 @@ allowBuilds:
   unrs-resolver: true
 minimumReleaseAgeExclude:
   - axios@1.20.0
+  - '@christensena/zodios-express@11.0.0'

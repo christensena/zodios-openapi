@@ -17,10 +17,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -42,10 +42,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -132,10 +132,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -184,10 +184,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -213,10 +213,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -305,10 +305,10 @@ exports[`toOpenApi should convert to openapi 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -335,7 +335,6 @@ exports[`toOpenApi should convert to openapi 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -357,7 +356,6 @@ exports[`toOpenApi should convert to openapi 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -415,10 +413,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -440,10 +438,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -530,10 +528,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -582,10 +580,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -611,10 +609,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -703,10 +701,10 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -733,7 +731,6 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -755,7 +752,6 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -814,10 +810,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -839,10 +835,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -929,10 +925,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -981,10 +977,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -1010,10 +1006,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1102,10 +1098,10 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -1132,7 +1128,6 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -1154,7 +1149,6 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -1203,10 +1197,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -1228,10 +1222,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1310,10 +1304,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1358,10 +1352,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -1387,10 +1381,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1475,10 +1469,10 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -1505,7 +1499,6 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -1527,7 +1520,6 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -1582,10 +1574,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -1607,10 +1599,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1697,10 +1689,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1749,10 +1741,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -1778,10 +1770,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -1870,10 +1862,10 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -1900,7 +1892,6 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -1922,7 +1913,6 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -1992,10 +1982,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -2017,10 +2007,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2107,10 +2097,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2159,10 +2149,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -2188,10 +2178,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2280,10 +2270,10 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -2310,7 +2300,6 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -2332,7 +2321,6 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
@@ -2381,10 +2369,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "name": {
@@ -2406,10 +2394,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2496,10 +2484,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2548,10 +2536,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
           "content": {
             "application/json": {
               "schema": {
-                "additionalProperties": false,
                 "properties": {
                   "email": {
                     "format": "email",
+                    "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                     "type": "string",
                   },
                   "id": {
@@ -2577,10 +2565,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "email": {
                       "format": "email",
+                      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                       "type": "string",
                     },
                     "id": {
@@ -2669,10 +2657,10 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
               "application/json": {
                 "schema": {
                   "items": {
-                    "additionalProperties": false,
                     "properties": {
                       "email": {
                         "format": "email",
+                        "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
                         "type": "string",
                       },
                       "id": {
@@ -2699,7 +2687,6 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "enum": [
@@ -2721,7 +2708,6 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": false,
                   "properties": {
                     "message": {
                       "type": "string",
