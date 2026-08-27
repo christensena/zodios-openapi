@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`toOpenApi should convert to openapi 1`] = `
 {
@@ -98,7 +98,7 @@ exports[`toOpenApi should convert to openapi 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -502,7 +502,7 @@ exports[`toOpenApi should convert to openapi with basic auth 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -907,7 +907,7 @@ exports[`toOpenApi should convert to openapi with bearer auth 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -1298,7 +1298,7 @@ exports[`toOpenApi should convert to openapi with builder 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -1687,7 +1687,7 @@ exports[`toOpenApi should convert to openapi with builder with security 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -2103,7 +2103,7 @@ exports[`toOpenApi should convert to openapi with oauth2 auth 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
@@ -2498,7 +2498,7 @@ exports[`toOpenApi should convert to openapi with prefix 1`] = `
           "204": {
             "content": {
               "application/json": {
-                "schema": undefined,
+                "schema": {},
               },
             },
             "description": "Delete a user",
